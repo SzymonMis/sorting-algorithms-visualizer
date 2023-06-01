@@ -3,5 +3,5 @@ using UnityEngine;
 
 public abstract class Algorithm : MonoBehaviour
 {
-	public abstract IEnumerator Sort();
+	public abstract IEnumerator Sort(float delay);
 }

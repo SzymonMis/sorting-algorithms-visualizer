@@ -6,7 +6,10 @@ public class SortingVisualizer : MonoBehaviour
 	public static SortingVisualizer Instance;// Simple Singleton instance
 
 	public GameObject columnPrefab;
+
+	[HideInInspector]
 	public int[] array = new int[45];
+
 	private float offset = 0.2f;
 	private float startPosition = -4.35f;
 	private float cubeSize = 0.05f;
@@ -14,11 +17,15 @@ public class SortingVisualizer : MonoBehaviour
 	private List<GameObject> columns = new List<GameObject>();
 	public Algorithm sortingAlgorithm;
 
+	[Range(0.0001f, 1)]
+	[Tooltip("Less delay equals to faster sorting")]
+	public float delay = 0.001f;
+
 	private void Awake() => Instance = this;
 
 	private void Start() => GenerateGraph();
 
-	public void StartSorting() => StartCoroutine(sortingAlgorithm.Sort());
+	public void StartSorting() => StartCoroutine(sortingAlgorithm.Sort(delay));
 
 	public void GenerateGraph()
 	{

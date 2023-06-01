@@ -3,13 +3,11 @@ using UnityEngine;
 
 public class BubbleSort : Algorithm
 {
-	public override IEnumerator Sort()
+	public override IEnumerator Sort(float delay)
 	{
 		int length = SortingVisualizer.Instance.array.Length;
 		int temp;
 		bool swapped;
-		//0.001f;
-		float delay = 0.2f;
 
 		for (int i = 0; i < length - 1; i++)
 		{
