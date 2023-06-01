@@ -16,11 +16,9 @@ public class SortingVisualizer : MonoBehaviour
 
 	private void Awake() => Instance = this;
 
-	private void Start()
-	{
-		GenerateGraph();
-		StartCoroutine(sortingAlgorithm.Sort());
-	}
+	private void Start() => GenerateGraph();
+
+	public void StartSorting() => StartCoroutine(sortingAlgorithm.Sort());
 
 	public void GenerateGraph()
 	{
