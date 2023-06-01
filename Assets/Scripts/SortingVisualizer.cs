@@ -22,6 +22,7 @@ public class SortingVisualizer : MonoBehaviour
 
 	public void GenerateGraph()
 	{
+		StopAllCoroutines();
 		ClearGraph();
 
 		//Randomizing values
