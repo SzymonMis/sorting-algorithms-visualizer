@@ -6,4 +6,4 @@ No dependencies required.
 ![](https://github.com/SzymonMis/sorting-algorithms-visualizer/blob/453c1ff25e3141cacd7e05c373ecb422c70bc380/Readme%20Media/Bubble%20Sort.gif)
 
 ## ![Selection Sort](https://github.com/SzymonMis/sorting-algorithms-visualizer/blob/main/Assets/Scripts/Algorithms/SelectionSort.cs)
-![](https://github.com/SzymonMis/sorting-algorithms-visualizer/blob/453c1ff25e3141cacd7e05c373ecb422c70bc380/Readme%20Media/Bubble%20Sort.gif)
+![](https://github.com/SzymonMis/sorting-algorithms-visualizer/blob/453c1ff25e3141cacd7e05c373ecb422c70bc380/Readme%20Media/Selection%20Sort.gif)
