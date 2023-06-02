@@ -44,9 +44,7 @@ public class BubbleSort : Algorithm
 		for (int i = 0; i < SortingVisualizer.Instance.array.Length; i++)
 		{
 			SortingVisualizer.Instance.HighlightColumn(i, Color.green);
-
 			yield return new WaitForSeconds(0.001f);
-
 			SortingVisualizer.Instance.ResetColumnColor(i);
 		}
 	}
